@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Match - ECHO</title>
+
+  <link rel="stylesheet" href="../css/feed.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="../assets/Logo.png" alt="ECHO">
+  </div>
+
+  <h1>Mural</h1>
+</header>
+
+<div class="container">
+
+  <div class="controls">
+    <select id="sort-select">
+      <option value="none">Ordenar por</option>
+      <option value="count">Quantidade de feedback</option>
+      <option value="priority">Prioridade</option>
+    </select>
+
+    <select id="filter-select">
+      <option value="all">Todos os status</option>
+      <option value="green">Verde</option>
+      <option value="yellow">Amarelo</option>
+      <option value="red">Vermelho</option>
+    </select>
+  </div>
+
+  <div class="card-feed" id="card-feed"></div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="side-panel" id="side-panel">
+
+  <span class="close-btn" id="close-panel">&times;</span>
+
+  <h2>Detalhes do Feedback</h2>
+
+  <div class="section">
+    <h3>Comentários</h3>
+    <div id="comments-list"></div>
+  </div>
+
+  <div class="section">
+    <h3>Estatísticas</h3>
+    <p id="stats"></p>
+  </div>
+
+  <div class="section">
+    <h3>Sugestões</h3>
+    <p id="suggestions"></p>
+  </div>
+
+  <div class="section">
+    <h3>Perfis dos Usuários</h3>
+    <p id="profiles"></p>
+  </div>
+
+  <div class="section">
+    <h3>Informações Extras</h3>
+
+    <p id="date">Data:</p>
+    <p id="type">Tipo:</p>
+    <p id="priority">Prioridade:</p>
+    <p id="history">Histórico:</p>
+    <p id="summary">Resumo rápido:</p>
+  </div>
+
+</div>
+
+<footer>
+
+  <div class="active">
+    <i class="fas fa-home"></i>
+    <span>Início</span>
+  </div>
+
+  <div onclick="window.location.href='empresa.html'">
+  <i class="fas fa-file-alt"></i>
+  <span>Formulários</span>
+</div>
+
+  <div>
+    <i class="fas fa-comments"></i>
+    <span>Feedback</span>
+  </div>
+
+  <div>
+    <i class="fas fa-user"></i>
+    <span>Perfil</span>
+  </div>
+
+</footer>
+
+<script src="../js/feed.js"></script>
+
+</body>
+</html>
